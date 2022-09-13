@@ -2,7 +2,7 @@
 
 /**
  * _isalpha - checks if input is an alphabet
- * @c - input
+ * @c: input
  * Return: if 1 if success, 0 if failure
  */
 
