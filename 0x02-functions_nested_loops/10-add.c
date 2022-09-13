@@ -2,14 +2,13 @@
 
 /**
  * add - funtion to add two numbers
- * @a, b: input numbers to be added
- * Return: 0
+ * @a: input 1
+ * @b: input 2
+ * Return: value
  */
 
 int add(int a, int b)
 {
-	int c;
-	c = a + b;
-	return (c);
+	return (a + b);
 }
 	
