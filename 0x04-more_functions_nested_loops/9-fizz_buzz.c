@@ -1,7 +1,7 @@
 #include <stdio.h>
+
 /**
- * main - func
- * @void: no ared
+ * main - print fizz buzz game
  * Return: 0;
  */
 int main(void)

@@ -1,9 +1,10 @@
-#include <stdio.h>
+#include <stdio.ho>
+
 /**
 * main - entry block
-* @void: no argument
 * Return: 0
 */
+
 int main(void)
 {
 	long int x;

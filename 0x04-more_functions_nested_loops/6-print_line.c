@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_line - fnuc
- * Description: defn
- * @n: var
+ * print_line - draws a straight line in the terminal
+ * @n: number of times the character _ should be printed
+ * Return: straight line in terminal
  */
 
 void print_line(int n)
@@ -10,6 +10,8 @@ void print_line(int n)
 	char c;
 
 	for (c = 0; c < n; c++)
+	{
 		_putchar('_');
+	}
 	_putchar('\n');
 }
