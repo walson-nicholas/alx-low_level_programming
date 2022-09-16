@@ -19,7 +19,7 @@ int main(void)
 			putchar(' ');
 			putchar((dig2 / 10) + '0');
 			putchar((dig2 % 10) + '0');
-		
+
 			if (dig1 == 98 && dig2 == 99)
 			{
 				continue;
