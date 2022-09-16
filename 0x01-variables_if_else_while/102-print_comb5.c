@@ -1,31 +1,35 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- * main - prints all possible combinations of two digit numbers
- * Return:Always 0 (Success)
+ * main - definer
+ * Return: passer
  */
-
 int main(void)
 {
-	int dig1;
-	int dig2;
+	int a, b, a1, a2, b1, b2;
 
-	for (dig1 = 0; dig1 < 98; dig1++)
+	for (a = 0; a <= 99; a++)
 	{
-		for (dig2 = dig1 + 1; dig2 < 99; dig2++)
+		for (b = 0; b <= 99; b++)
 		{
-			putchar((dig1 / 10) + '0');
-			putchar((dig1 % 10) + '0');
-			putchar(' ');
-			putchar((dig2 / 10) + '0');
-			putchar((dig2 % 10) + '0');
-
-			if (dig1 == 98 && dig2 == 99)
+			if (b > a)
 			{
-				continue;
+				a1 = a / 10;
+				a2 = a % 10;
+				b1 = b / 10;
+				b2 = b % 10;
+
+				if (!(a == 0 && b == 1))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+				putchar(a1 + '0');
+				putchar(a2 + '0');
+				putchar(' ');
+				putchar(b1 + '0');
+				putchar(b2 + '0');
 			}
-			putchar(',');
-			putchar(' ');
 		}
 	}
 	putchar('\n');
