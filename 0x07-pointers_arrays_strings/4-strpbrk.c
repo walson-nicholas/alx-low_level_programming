@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strpbrk - main
- * @s: str
- * @accept: acc
- * Return: d
+ * _strpbrk - first occurence of a character in a substring
+ * @s: input string to be scanned
+ * @accept: substring
+ * Return: pointer to the byte in s matching any byte in accept
  */
 char *_strpbrk(char *s, char *accept)
 {
