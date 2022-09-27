@@ -1,24 +1,18 @@
 #include "main.h"
 
 /**
- * _strchr - main func
- * @s: sd
- * @c: first c
+ * _strchr - searches for the first occurance of a char in a string
+ * @s: input string
+ * @c: character to search for in string
  * Return: 0
  */
 char *_strchr(char *s, char c)
 {
 	int i = 0;
 
-	while (i < 100)
+	while (*(s + i) != c)
 	{
-		if (*(s + i) == c)
-		{
-			return (s + i);
-		}
-			i++;
+		i++;
 	}
-	if (*(s + i) == c)
 	return (s + i);
-	return (0);
 }
