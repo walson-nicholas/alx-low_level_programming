@@ -18,9 +18,8 @@ char *_strdup(char *str)
 		i++;
 	}
 	p = (char *)malloc(i * sizeof(char) + 1);
-	if (p == NULL)
+	if (str == NULL)
 	{
-		printf("Error");
 		return (NULL);
 	}
 	else if (str != NULL)
@@ -33,7 +32,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		x = "Failed to allocate memory\n";
+		x = "failed to allocate memory\n";
 		p = x;
 		return (p);
 	}
