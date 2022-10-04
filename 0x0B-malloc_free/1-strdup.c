@@ -9,7 +9,6 @@
 char *_strdup(char *str)
 {
 	char *p;
-	char *x;
 	int i, j;
 	int count;
 
@@ -22,7 +21,7 @@ char *_strdup(char *str)
 	}
 
 	p = (char *)malloc(count * sizeof(char) + 1);
-	if (str == NULL)
+	if (p == NULL)
 	{
 		return (NULL);
 	}
@@ -37,9 +36,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		x = "Failed to allocate memory\n";
-		p = x;
-		return (p);
+		return (NULL);
 	}
 	return (p);
 }
