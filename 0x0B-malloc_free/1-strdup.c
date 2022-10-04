@@ -1,40 +1,45 @@
 #include "main.h"
-
+#include <stdlib.h>
+#include <stdio.h>
 /**
- * _strdup - allocates memory space and contains copy of string
- * @str: pointer to input string
- * Return: pointer to allocated memory space
+ * _strdup - main
+ * Return: 0
+ * @str: var 1
  */
 char *_strdup(char *str)
 {
 	char *p;
 	char *x;
 	int i, j;
+	int count = 0;
 
-	i = 0;
 	j = 0;
-	while (str[i] != '\0')
+	while (str[j] != '\0')
 	{
-		i++;
+		count++;
+		j++;
 	}
-	p = (char *)malloc(i * sizeof(char) + 1);
-	if (str == NULL)
+
+	p = (char *)malloc(count * sizeof(char) + 1);
+	if (p == NULL)
 	{
-		return (NULL);
+		printf("Error");
 	}
 	else if (str != NULL)
 	{
-		while (j <= i)
+		i = 0;
+		while (i <= count)
 		{
-			p[j] = str[j];
-			j++;
+			p[i] = str[i];
+			i++;
 		}
 	}
 	else
 	{
-		x = "failed to allocate memory\n";
+		x = "Failed to allocate memory\n";
 		p = x;
-		return (NULL);
+		return (p);
 	}
 	return (p);
 }
+
