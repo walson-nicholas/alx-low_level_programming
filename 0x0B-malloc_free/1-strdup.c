@@ -21,7 +21,6 @@ char *_strdup(char *str)
 	if (p == NULL)
 	{
 		printf("Error: no valid string argument passed to function");
-		return (NULL);
 	}
 	if (str != NULL)
 	{
