@@ -20,9 +20,10 @@ char *_strdup(char *str)
 	p = (char *)malloc(i * sizeof(char) + 1);
 	if (p == NULL)
 	{
-		printf("Error: no valid string argument passed to function");
+		printf("Error");
+		return (NULL);
 	}
-	if (str != NULL)
+	else if (str != NULL)
 	{
 		while (j <= i)
 		{
