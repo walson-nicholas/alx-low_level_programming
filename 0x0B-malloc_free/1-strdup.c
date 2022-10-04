@@ -8,7 +8,6 @@
 char *_strdup(char *str)
 {
 	char *p;
-	char *x;
 	int i, j;
 
 	i = 0;
